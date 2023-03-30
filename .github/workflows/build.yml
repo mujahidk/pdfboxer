@@ -22,7 +22,7 @@ jobs:
       run: docker build . --file Dockerfile --tag geograph:develop
 
     - name: Publish to Docker Hub Registry
-      uses: elgohr/Publish-Docker-Github-Action@master
+      uses: elgohr/Publish-Docker-Github-Action@v5
       with:
         name: mujahidkhaleel/pdfboxer
         username: ${{ secrets.DOCKER_USERNAME }}
